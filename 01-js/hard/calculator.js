@@ -16,6 +16,53 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
 
-module.exports = Calculator;
+
+class Calculator {
+  constructor() {
+    this.output = 0;
+  }
+
+  add(num) {
+    this.output += num;
+  }
+
+  subtract(num) {
+    this.output -= num;
+  }
+
+  multiply(num) {
+    this.output *= num;
+  }
+
+  divide(num) {
+    if (num != 0) this.output /= num;
+    else throw new Error("calculate division by zero");
+  }
+
+  calculate(expression) {
+    const cleanExpr = expression.replaceAll(" ", "");
+    const invalidParenthesis = "expression with invalid parentheses";
+    const invalidCharacters = "calculate expression with invalid characters";
+    const divByZero = "calculate division by zero";
+    const findBrackets = (str) => str.match(/{|}|\[|\]|\(|\)/g);
+    const countBrackets = (str) =>
+      findBrackets(str) ? findBrackets(str).length : 0;
+
+    if (countBrackets(cleanExpr) % 2 != 0) throw new Error(invalidParenthesis);
+    if (/[a-zA-Z]/g.test(cleanExpr)) throw new Error(invalidCharacters);
+    if (cleanExpr.includes("/0")) throw new Error(divByZero);
+
+    // this.output = Function('"use strict";return (' + cleanExpr + ")")();
+    this.output = new Function(`"use strict"; return(${cleanExpr})`)();
+  }
+
+  clear() {
+    this.output = 0;
+  }
+
+  getResult() {
+    return this.output;
+  }
+}
+
