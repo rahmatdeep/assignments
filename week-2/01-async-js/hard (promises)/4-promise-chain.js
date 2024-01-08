@@ -38,4 +38,4 @@ function calculateTime(t1, t2, t3) {
 }
 
 module.exports = calculateTime;
-let a = calculateTime(1,1,1).then((data)=>{console.log(data)})
+// calculateTime(1,2,3)

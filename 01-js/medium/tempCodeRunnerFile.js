@@ -1,1 +1,0 @@
-console.log(isPalindrome([1,2,3]))
