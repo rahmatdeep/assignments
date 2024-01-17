@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#root{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+}
+
+.card h1{
+    color: rgb(31, 29, 29);
+    font-size: xx-large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.card h2{
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.card li{
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.card ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/* .card button{
+    background-color: rgb(6, 129, 229);
+    color: aliceblue;
+    padding: 5px 10px;
+    margin-right: 10px;
+} */
+
+
+
+/* CSS */
+.card button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.card button:hover,
+.card button:focus {
+  background-color: #07c;
+}
+
+card button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+card button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}

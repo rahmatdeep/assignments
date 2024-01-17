@@ -8,23 +8,23 @@ function App() {
       id: 1,
       name: "rahmat",
       description: "Hi I'm Rahmat",
-      interests: ["coding, basketball"],
+      interests: ["coding", "basketball"],
       socialMedia: ["facebook", "instagram", "linkedin"],
     },
-    {
-      id: 2,
-      name: "rahmat",
-      description: "Hi I'm Rahmat",
-      interests: ["coding, basketball"],
-      socialMedia: ["facebook", "instagram", "linkedin"],
-    },
-    {
-      id: 3,
-      name: "rahmat",
-      description: "Hi I'm Rahmat",
-      interests: ["coding, basketball"],
-      socialMedia: ["facebook", "instagram", "linkedin"],
-    },
+    // {
+    //   id: 2,
+    //   name: "rahmat",
+    //   description: "Hi I'm Rahmat",
+    //   interests: ["coding", "basketball"],
+    //   socialMedia: ["facebook", "instagram", "linkedin"],
+    // },
+    // {
+    //   id: 3,
+    //   name: "rahmat",
+    //   description: "Hi I'm Rahmat",
+    //   interests: ["coding", "basketball"],
+    //   socialMedia: ["facebook", "instagram", "linkedin"],
+    // },
   ]);
 
   return (
