@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useMemo } from "react";
 // You have been given a list of items you shopped from the grocery store
 // You need to calculate the total amount of money you spent
 
-const Assignment3 = () => {
+export const Assignment3 = () => {
   const [items, setItems] = useState([
     { name: "Chocolates", value: 10 },
     { name: "Chips", value: 20 },
@@ -29,5 +30,3 @@ const Assignment3 = () => {
     </div>
   );
 };
-
-export default Assignment3;
