@@ -1,5 +1,6 @@
 import "./App.css";
 import BackgroundChanger from "./components/BackgroundChanger";
+import BirthdayWisher from "./components/BirthdayWisher";
 import GitHubProfile from "./components/GithubProfile";
 import ParaGenerator from "./components/ParaGenerator";
 import ProfileComponent from "./components/ProfileComponent";
@@ -21,6 +22,7 @@ function App() {
       {/* <BackgroundChanger /> */}
       {/* <ParaGenerator /> */}
       {/* <GitHubProfile /> */}
+      {/* <BirthdayWisher /> */}
     </>
   );
 }
